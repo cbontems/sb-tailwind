@@ -1,5 +1,11 @@
 module.exports = {
-  purge: ["./src/**/*.jsx", "./index.html"],
+  purge: {
+    // enabled: false,
+    content: ["./src/**/*.jsx", "./index.html"],
+    options : {
+      // https://purgecss.com/configuration.html#options
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
